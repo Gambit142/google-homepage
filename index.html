@@ -15,12 +15,13 @@
     nav.nav-top a{
         margin: 10px;
         margin-top: 15px;
+        color: rgb(32, 32, 32);
     }
     #profile-image{
         width: 35px;
         height: 35px;
         border-radius: 50%;
-        position:relative;
+        margin-top: -9px;
     }
     #google-logo{
         margin-top: 90px;
@@ -45,6 +46,11 @@
         display:block;
         padding-top: 7px;
         padding-right: 18px;
+        }
+    #input-text{
+        width: 400px;
+        height: 33px;
+        border: 0.5px solid transparent;
     }
     .icon{
         font-size: 15px;
@@ -86,9 +92,63 @@
         font-family: arial, sans-serif;
         font-size: small;
     }
-    a.lang-links{
-        tab-size: 80;}
-
+    #foot-country{
+        display: flex;
+        justify-content: left;
+        height: 33px;
+        align-items: center;
+        margin-top: 60px;
+        margin-left: -8px;
+        margin-right: -8px;
+        padding-top: 2px;
+        padding-left: 25px;
+        background-color: #eeeaea;
+        border: 1px solid #cfcbcb;
+    }
+    #initial{
+        font-family: arial, sans-serif;
+        color: rgb(104, 98, 98);
+        font-size: 14px;
+    }
+    #foot-links{
+        display: flex;
+        height:40px;
+        justify-content: space-between;
+        align-items:center;
+        margin-top: 0px;
+        margin-left: -8px;
+        margin-right: -8px;
+        margin-bottom: -8px;
+        padding-top: 3px;
+        padding-left: 25px;
+        background-color: #eeeaea;
+    }
+    #links1{
+        color: rgb(104, 98, 98);
+        font-family: arial, sans-serif;
+        margin-left: 22px;
+        font-size: 14px;
+    }
+    #links2{
+        color: rgb(104, 98, 98);
+        font-family: arial, sans-serif;
+        font-size: 14px;
+        margin-right: 22px;
+    }
+    #nav-right{
+        display: flex;
+        justify-content: flex-start;
+    }
+    #nav-left{
+        display:flex;
+        justify-content: flex-end;
+    }
+    a{
+        text-decoration: none; 
+    }
+    a:hover{
+        text-decoration: underline;
+    }
         </style>
 </head>
     <header class="nav-tag">
@@ -106,6 +166,8 @@
             <div id="search-container">
                 <div id="search-box">
                     <i class="fa fa-search icon"></i>
+                    <label for="input-text"></label>
+                    <input id="input-text" type="text" name="input-text">
                     <a href="#"><img class="microphone-pics" src="Images/microphone.png" alt="Google Microphone Button"></a>
                 </div>
             </div>
@@ -117,17 +179,23 @@
     <div id="nig-lang">
         Google offered in &ensp;<a href="#">Hausa</a> &ensp;<a href="#">Igbo</a> &ensp;<a href="#">Ede Yoruba</a> &ensp;<a href="#">Nigerian Pidgin</a>
     </div>
-    <footer class="footer-links">
-        <p>Nigeria</p><br>
-        <nav class="nav-bottom">
-            <a href="#">Advertising</a>
-            <a href="#">Business</a>
-            <a href="#">About</a>
-            <a href="#">How Search Works</a>
-            <a href="#">Piracy</a>
-            <a href="#">Terms</a>
-            <a href="#">Settings</a>
-        </nav>
+    <footer>
+        <div id="foot-country">
+            <p id="initial">Nigeria</p>
+        </div>
+        <div id="foot-links">
+            <nav id="nav-right">
+                <a id="initial" href="#">Advertising</a>
+                <a id="links1"href="#">Business</a>
+                <a id="links1"href="#">About</a> 
+                <a id="links1"href="#">How Search Works</a>
+            </nav>
+            <nav id="nav-left">
+                <a id="links2" href="#">Piracy</a>
+                <a id="links2" href="#">Terms</a>
+                <a id="links2" href="#">Settings</a>
+            </nav>
+        </div>
     </footer>
 </html>
 
